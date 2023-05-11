@@ -46,11 +46,18 @@ PRIMEIRO PASSO - * Excluir diretórios, arquivos, grupos e usuários criados ant
  SEGUNDO PASSO: Criar um Script
  * criar o diretório scripts: mkdir scripts
  * criar um novo script: nano script.sh
-      ** #!/bin/bash 
+     
+     ** #!/bin/bash 
+      
     -- criar os diretórios -- mkdir /'diretorio'
+    
     -- criar grupos -- groupadd GRP_'GRUPO'
+    
     -- criar usuários e adicionar aos grupos -- useradd 'usuario' -m -s /bin/bash -p $(openssl passwd -crypt 'senha') -G 'grupo'
+    
     -- permissões nos diretórios -- 
+    
     chown (define o dono) - chown 'usuario': 'grupo' /'diretorio'
+    
     chmod (define as permissões de rwx)  xxx /'diretorio' 
     
